@@ -1,4 +1,10 @@
-const express = require("express");
+cpp.get("/health", (req, res) => {
+	  res.status(200).send("OK");
+});
+app.get("/health", (req, res) => {
+	  res.status(200).send("OK");
+});
+ionst express = require("express");
 const { Pool } = require("pg");
 
 const app = express();
@@ -19,5 +25,9 @@ app.get("/", async (req, res) => {
 
 app.listen(port,"0.0.0.0", () => {
   console.log(`Backend running on port ${port}`);
+});
+
+app.get("/health", (req, res) => {
+	  res.status(200).send("OK");
 });
 
