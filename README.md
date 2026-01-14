@@ -117,15 +117,10 @@ screenshots/Capture31.PNG
 ### Key Learnings
 
 * Dockerizing full-stack applications
-
 * Docker Compose networking & service dependencies
-
 * AWS EC2 deployment and security groups
-
 * Persistent storage using Docker volumes
-
 * Health checks and logging for observability
-
 * Production-like DevOps workflow
 
 
