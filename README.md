@@ -45,3 +45,67 @@ myfullstackapp/
 │
 ├── docker-compose.yml
 └── README.md
+
+
+---
+
+## ⚙️ Docker Services
+
+| Service   | Port | Description |
+|----------|------|------------|
+| Frontend | 3000 | React user interface |
+| Backend  | 5000 | Node.js REST API |
+| Database | 5432 | PostgreSQL database |
+
+---
+
+## ☁️ AWS EC2 Deployment
+
+- Instance OS: Ubuntu
+- Docker & Docker Compose installed
+- Security Group allows:
+  - TCP 3000 (Frontend)
+  - TCP 5000 (Backend)
+  - TCP 22 (SSH)
+
+## Application Access 
+note: i used public ip in ec2 not elastic ip so ip chanegs every time restart the instance.
+ http://<ec2 public ip>:3000
+
+ 
+---
+
+## 🚀 Deployment Steps
+
+### step 1 Install Docker & Docker Compose
+```bash
+sudo apt update
+sudo apt install -y docker.io docker-compose
+sudo usermod -aG docker ubuntu
+newgrp docker
+
+## step 2 Clone Repository
+-----------------------------
+
+git clone https://github.com/Jenish9/myfullstackapp.git
+cd myfullstackapp
+
+## step 3 Build & Run Containers
+------------------------------------------
+docker compose up -d --build
+
+##step 4 Health Checks
+----------------------------------------------------------
+--->Backend service includes health checks
+--->Docker automatically monitors container health
+----------------------------------------------------------
+docker ps
+docker inspect backend
+
+## step 5 Logs & Observability
+---------------------------------------------------------
+docker compose logs
+docker logs backend
+
+
+ 
