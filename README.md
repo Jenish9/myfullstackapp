@@ -123,5 +123,8 @@ screenshots/Capture31.PNG
 * Health checks and logging for observability
 * Production-like DevOps workflow
 
+Author
 
+Jenish Bhagat
+DevOps | Docker | AWS | Cloud Computing
  
