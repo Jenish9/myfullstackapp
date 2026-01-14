@@ -106,6 +106,14 @@ docker inspect backend
 ---------------------------------------------------------
 docker compose logs
 docker logs backend
+## 📸 Screenshots
+
+### Application Running on AWS EC2
+![Application Running](screenshots/app-running.png)
+
+### Docker Containers Running
+![Docker PS](screenshots/docker-ps.png)
+
 
 
  
