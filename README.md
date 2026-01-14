@@ -109,10 +109,10 @@ docker logs backend
 ## 📸 Screenshots
 
 ### Application Running on AWS EC2
-![Application Running](screenshots/app-running.png)
+screenshots/Capture14.PNG
 
 ### Docker Containers Running
-![Docker PS](screenshots/docker-ps.png)
+screenshots/Capture31.PNG
 
 
 
